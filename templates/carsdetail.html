@@ -1,0 +1,30 @@
+{% load static %}
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="{{x.img.url}}" alt="car1">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<a href="{% url 'carsdetail' x.id %}"> <h3 class="name">{{x.name}}</h3></a>
+								<p>"{{x.bio}}" </p>
+	 							<h4 class="price"> {{x.price}}&euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="{% static 'image/compicon.png' %}" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>
+			</div>
+       </div>
+	</div>

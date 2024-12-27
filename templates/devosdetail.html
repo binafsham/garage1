@@ -1,0 +1,8 @@
+{% load static %}
+	<div class="item active">
+				<img src="{{x.img.url}}" alt="oldcar">
+				<div class="carousel-caption">
+					<a href="{% url 'devosdetail' x.id %}"> <h2>{{x.name}}</h2></a>
+					<p>{{x.bio}} </p>
+				</div>
+			</div>
